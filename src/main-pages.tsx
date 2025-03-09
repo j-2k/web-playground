@@ -8,6 +8,7 @@ import { Link, NavLink } from "react-router"
 function Home(){
 
     const [players, setPlayers]  = useState<string[]>([])
+    let upperPlayersArr : string[] = []//quick fix
 
     const [scrambledPlayers,setScrambledPlayers] = useState<string[]>([])
 
@@ -20,12 +21,16 @@ function Home(){
         const name = formJson.nameField.toString();
         console.log(name);
 
+        upperPlayersArr = players.map((ele) => {
+            return ele.toUpperCase();
+        });
+
         const isValid = /^[a-z0-9]+$/i.test(name);
         if(name === "" || !isValid){
             alert("Name is empty OR Invalid Name Entry!");
             return;
         }
-        if(players.includes(name)){
+        if(upperPlayersArr.includes(name.toUpperCase())){
             alert("Name already exists in the table!")
             return;
         }
