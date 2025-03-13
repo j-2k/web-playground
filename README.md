@@ -1,3 +1,22 @@
+# Web Playground
+
+Some things that need to be implemented
+- Scramble feature (Bonus points for working with multiple team amounts)
+- Needs to be using the minecraft API to fetch heads!
+
+
+
+Default React Vite TS Readme below.
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
